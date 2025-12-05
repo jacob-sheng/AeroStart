@@ -22,9 +22,13 @@ export const fetchSuggestions = (engine: string, query: string): Promise<string[
       return;
     }
 
-    // Bilibili uses fetch (via Vite proxy)
+    // Bilibili uses fetch (via Vite proxy in dev, Vercel Function in production)
     if (engine === 'Bilibili') {
-      const url = `/bilibili?term=${encodeURIComponent(query)}`;
+      // In production (Vercel), use /api/bilibili; in development, use /bilibili (Vite proxy)
+      const isDev = import.meta.env.DEV;
+      const url = isDev
+        ? `/bilibili?term=${encodeURIComponent(query)}`
+        : `/api/bilibili?term=${encodeURIComponent(query)}`;
 
       fetch(url)
         .then(response => response.json())
