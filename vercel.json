@@ -4,12 +4,6 @@
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": "vite",
-  "rewrites": [
-    {
-      "source": "/bilibili/:path*",
-      "destination": "https://s.search.bilibili.com/main/suggest/:path*"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",

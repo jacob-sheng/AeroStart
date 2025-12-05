@@ -29,16 +29,12 @@ Click the button above to deploy your own instance of AeroStart to Vercel in min
 
 ```bash
 pnpm install
-# or
-npm install
 ```
 
 ### Run Development Server
 
 ```bash
 pnpm dev
-# or
-npm run dev
 ```
 
 Visit `http://localhost:3000` to view the application.
@@ -47,8 +43,6 @@ Visit `http://localhost:3000` to view the application.
 
 ```bash
 pnpm build
-# or
-npm run build
 ```
 
 ## 🎯 Usage Guide
@@ -95,28 +89,6 @@ AeroStart/
 ├── types.ts           # TypeScript type definitions
 ├── App.tsx            # Main application component
 └── index.tsx          # Application entry point
-```
-
-## 🎨 Customization
-
-### Add Search Engine
-
-Edit the `SEARCH_ENGINES` array in `constants.ts`:
-
-```typescript
-{
-  name: 'Engine Name',
-  urlPattern: 'https://example.com/search?q=',
-  icon: 'SVG icon string'
-}
-```
-
-### Add Theme Color
-
-Edit the `THEMES` array in `constants.ts`:
-
-```typescript
-{ name: 'Theme Name', hex: '#colorcode' }
 ```
 
 ## 📄 License
