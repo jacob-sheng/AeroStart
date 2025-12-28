@@ -53,6 +53,12 @@ export const PRESET_WALLPAPERS: PresetWallpaper[] = [
     type: 'video', 
     url: 'https://assets.mixkit.co/videos/preview/mixkit-rain-falling-on-the-window-glass-1634-large.mp4',
     thumbnail: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&w=200&q=60' 
+  },
+  { 
+    name: 'Bing Daily', 
+    type: 'image', 
+    url: 'https://bing.ioliu.cn/v1/image?rand=1',
+    thumbnail: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=200&q=60'
   }
 ];
 
