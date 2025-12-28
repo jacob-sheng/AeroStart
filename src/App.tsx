@@ -35,6 +35,14 @@ const DEFAULT_SETTINGS: UserSettings = {
 
 type ViewMode = 'search' | 'dashboard';
 
+// Mobile wallpaper URL
+const MOBILE_WALLPAPER = 'https://youke2.picui.cn/s1/2025/12/28/6950c40cb25f2.jpeg';
+
+// Check if device is mobile
+const isMobileDevice = () => {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+};
+
 const App: React.FC = () => {
   // State for settings visibility
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -51,7 +59,15 @@ const App: React.FC = () => {
   const [isSearchActive, setIsSearchActive] = useState(false);
 
   // Application Settings - loaded from Local Storage
-  const [settings, setSettings] = useState<UserSettings>(() => loadSettings(DEFAULT_SETTINGS));
+  const [settings, setSettings] = useState<UserSettings>(() => {
+    const loadedSettings = loadSettings(DEFAULT_SETTINGS);
+    // Apply mobile wallpaper if on mobile device
+    if (isMobileDevice()) {
+      loadedSettings.backgroundUrl = MOBILE_WALLPAPER;
+      loadedSettings.backgroundType = 'image';
+    }
+    return loadedSettings;
+  });
 
   // Flag to track if this is the initial mount
   const isInitialMount = useRef(true);

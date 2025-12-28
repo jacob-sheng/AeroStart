@@ -31,12 +31,6 @@ export const PRESET_WALLPAPERS: PresetWallpaper[] = [
     url: 'https://tc-new.z.wiki/autoupload/f/JPb3wcBYRgvdgjBZlDTRdWSEpzNQ5XwArLwhNo1hcymyl5f0KlZfm6UsKj-HyTuv/20250828/JmPj/3840X2160/light-background.png/webp' 
   },
   { 
-    name: 'Bing Daily', 
-    type: 'image', 
-    url: 'https://api.bimg.cc/today?w=1920&h=1080&mkt=zh-CN',
-    thumbnail: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=200&q=60'
-  },
-  { 
     name: 'Mountains', 
     type: 'image', 
     url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80',
