@@ -16,6 +16,16 @@ export const DEFAULT_BACKGROUND_IMAGE = "https://picsum.photos/1920/1080?graysca
 
 export const PRESET_WALLPAPERS: PresetWallpaper[] = [
   { 
+    name: 'Local Image 1', 
+    type: 'image', 
+    url: '/IMG_20251114_200602.png' 
+  },
+  { 
+    name: 'Local Image 2', 
+    type: 'image', 
+    url: '/IMG_20251114_202953.jpeg' 
+  },
+  { 
     name: 'Default', 
     type: 'image', 
     url: 'https://tc-new.z.wiki/autoupload/f/JPb3wcBYRgvdgjBZlDTRdWSEpzNQ5XwArLwhNo1hcymyl5f0KlZfm6UsKj-HyTuv/20250828/JmPj/3840X2160/light-background.png/webp' 
