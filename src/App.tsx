@@ -6,7 +6,7 @@ import SettingsModal from './components/SettingsModal';
 import SettingsMenu from './components/SettingsMenu';
 import ErrorBoundary from './components/ErrorBoundary';
 import GlobalContextMenu from './components/GlobalContextMenu';
-import { SettingsIcon } from './components/Icons';
+import { SettingsIcon, BlogIcon } from './components/Icons';
 import { UserSettings, WallpaperFit, SettingsSection } from './types';
 import { PRESET_WALLPAPERS, SEARCH_ENGINES, THEMES } from './constants';
 import { loadSettings, saveSettings } from './utils/storage';
@@ -292,6 +292,19 @@ const App: React.FC = () => {
                 />
               </div>
             </ErrorBoundary>
+
+            {/* Blog Link Button - Top Right */}
+            <div className="absolute top-6 right-6 z-40">
+              <a
+                href="https://ayn.us.ci"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-2 rounded-full bg-black/30 hover:bg-white/20 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all duration-300 shadow-lg"
+                aria-label="Blog"
+              >
+                <BlogIcon className="w-5 h-5 text-white/70 group-hover:text-white transition-colors duration-300" />
+              </a>
+            </div>
           </div>
 
           {/* 
