@@ -19,7 +19,7 @@ const DEFAULT_SETTINGS: UserSettings = {
   backgroundBlur: 8,
   searchEngines: [...SEARCH_ENGINES],
   selectedEngine: SEARCH_ENGINES[0].name,
-  themeColor: THEMES[0].hex,
+  themeColor: THEMES[1].hex,
   searchOpacity: 0.8,
   enableMaskBlur: false,
   maskOpacity: 0.2,
