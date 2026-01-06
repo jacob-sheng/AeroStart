@@ -294,17 +294,15 @@ const App: React.FC = () => {
             </ErrorBoundary>
 
             {/* Blog Link Button - Top Right */}
-            <div className="absolute top-6 right-6 z-40">
-              <a
-                href="https://ayn.us.ci"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-2 rounded-full bg-black/30 hover:bg-white/20 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all duration-300 shadow-lg"
-                aria-label="Blog"
-              >
-                <BlogIcon className="w-5 h-5 text-white/70 group-hover:text-white transition-colors duration-300" />
-              </a>
-            </div>
+            <a
+              href="https://ayn.us.ci"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-6 right-6 z-40 group"
+              aria-label="Blog"
+            >
+              <BlogIcon className="w-5 h-5 text-white/70 group-hover:text-white transition-colors duration-300" />
+            </a>
           </div>
 
           {/* 
